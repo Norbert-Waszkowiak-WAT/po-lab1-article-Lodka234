@@ -1,20 +1,25 @@
 #include <iostream>
 #include "article.h"
- 
-Article ::Article(): title(""), author(Author("", "")), publicationYear(0), journal(""){}
-    Article ::Article(string articleTitle, Author articleAuthor, int year, string journalName): title(articleTitle), author(articleAuthor), publicationYear(year), journal(journalName){
- 
+using namespace std;
+Article();
+    Article::Article(string articleTitle,Author articleAuthor,int year, string journalName){
+    Article::Article(Article &other){
+
     }
-    Article ::Article(Article &other): title(other.title), author(other.author), publicationYear(other.publicationYear), journal(other.journal){}
-    string Article ::getTitle(){
-        return title;
+    void displayInfo(){
+
     }
-    Author Article :: getAuthor(){
-        return author;
+    string Article::getTitle(){
+
     }
-    int Article :: getPublicationYear(){
-        return publicationYear;
+    Author Article::getAuthor(){
+
     }
-    string Article ::getJournal(){
-        return journal;
+    int getPublicatinYear(){
+
     }
+    string Article::getJournal(){
+        
+    }
+
+}
