@@ -1,18 +1,25 @@
+#ifndef ARTICLE_H
+#define ARTICLE_H
+ 
 #include <iostream>
+#include "author.h"
 using namespace std;
-class Article{
-    private:
+ 
+class Article {
+private:
     string title;
     Author author;
     int publicationYear;
     string journal;
-    public:
+public:
     Article();
-    Article(string articleTitle,Author articleAuthor,int year, string journalName)
-    Article(Article &other);
+    Article(string articleTitle, Author articleAuthor, int year, string journalName);
+    Article(Article& other);
     void displayInfo();
     string getTitle();
     Author getAuthor();
-    int getPublicatinYear();
+    int getPublicationYear();
     string getJournal();
-}
+};
+ 
+#endif
