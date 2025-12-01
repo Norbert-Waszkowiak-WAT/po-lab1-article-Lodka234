@@ -1,17 +1,19 @@
-#include <iostream>
+ 
+#include<iostream>
 #include "author.h"
-using namespace std;
-
-Author::Author(string name, string surname):name(name), surname(surname){}
-    void Author::print(){
+//using namespace std;
+Author::Author(string name, string surname):name(name),surname(surname){}
+Author::Author(): name(""), surname("") {}    
+void Author::print(){
         cout<<name<<" "<<surname<<endl;
     }
     string Author::toString(){
-        return name+" "+surname;
+        return name +" "+ surname;
     }
     string Author::getName(){
-        return name;
+    return name;
     }
     string Author::getSurname(){
-        return surname;
+    return surname;
     }
+ 
